@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1360.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.TelaCadProdutoController">
+   <children>
+      <Label fx:id="lblCadProduto" prefHeight="768.0" prefWidth="1360.0" textFill="#00194e" />
+      <Group>
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00194e" height="768.0" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00194e" height="50.0" layoutX="250.0" stroke="BLACK" strokeType="INSIDE" width="1110.0" />
+            <Group layoutX="588.0" layoutY="672.0">
+               <children>
+                  <Button fx:id="bt_salvar" defaultButton="true" layoutX="105.0" mnemonicParsing="false" onAction="#salvarProduto" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #00194E;" text="Salvar" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="bt_Cancelar" cancelButton="true" layoutX="275.0" mnemonicParsing="false" onAction="#cancelarCadastro" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #00194E;" text="Cancelar" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Group>
+         </children>
+      </Group>
+      <Group layoutX="13.5" layoutY="18.0224609375">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="25.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestão Online">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Text>
+            <Line endX="220.0" layoutY="40.4775390625" stroke="WHITE" strokeWidth="3.0" />
+         </children>
+      </Group>
+      <Group layoutX="45.0" layoutY="138.41796875">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="40.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Painel">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutY="0.58203125" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../TCC/Icones/housebranca.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutX="45.0" layoutY="212.0">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="40.0" layoutY="23.41796875" strokeType="OUTSIDE" strokeWidth="0.0" text="Produtos">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../TCC/Icones/lista-de-controle.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="48.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../TCC/Icones/cliente.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="85.0" layoutY="311.41796875" strokeType="OUTSIDE" strokeWidth="0.0" text="Clientes">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Group layoutX="45.0" layoutY="363.41796875">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="40.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vendas">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutY="1.58203125" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../TCC/Icones/carrinho-de-compras.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutX="45.0" layoutY="437.0">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="40.0" layoutY="23.41796875" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajuda">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../TCC/Icones/help2.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutX="45.0" layoutY="512.0">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="40.0" layoutY="23.41796875" strokeType="OUTSIDE" strokeWidth="0.0" text="Configuração">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../TCC/Icones/mechanical-gears-.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutX="45.0" layoutY="587.0">
+         <children>
+            <Text fill="WHITE" fontSmoothingType="LCD" layoutX="38.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sair">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../TCC/Icones/sair.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group layoutX="1100.0" layoutY="10.0">
+         <children>
+            <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="-35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../TCC/Icones/lista-de-controle.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Produtos">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Button layoutX="1138.0" layoutY="92.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="175.0" style="-fx-background-color: #00194E;" text="Lista de Produtos" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../TCC/Icones/lista-de-controle.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Group layoutX="356.0" layoutY="221.0">
+         <children>
+            <TextField fx:id="txtDescricao" layoutX="93.0" layoutY="-19.0" onAction="#definirDescricao" prefHeight="30.0" prefWidth="850.0" promptText="Insira a descrição do produto..." />
+            <Text fill="#00194e" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Group layoutX="357.0" layoutY="165.0">
+         <children>
+            <TextField fx:id="txtCode" disable="true" layoutX="73.0" layoutY="-19.0" prefHeight="30.0" prefWidth="125.0" promptText="Código do Produto..." />
+            <Text fill="#00194e" strokeType="OUTSIDE" strokeWidth="0.0" text="Código:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Group layoutX="356.0" layoutY="276.0">
+         <children>
+            <TextField fx:id="txtTipo" layoutX="51.0" layoutY="-19.0" prefHeight="30.0" prefWidth="125.0" promptText="Tipo de produto.." />
+            <Text fill="#00194e" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Group layoutX="762.0" layoutY="398.0">
+         <children>
+            <DatePicker fx:id="dtDatas" editable="false" layoutX="158.0" layoutY="-20.0" maxWidth="250.0" onAction="#datePickerCadastro" prefHeight="30.0" promptText="Definir a data.." />
+            <Text fill="#00194e" strokeType="OUTSIDE" strokeWidth="0.0" text="Data de Cadastro:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Group layoutX="356.0" layoutY="331.0">
+         <children>
+            <TextField fx:id="txtQuantidade" layoutX="112.0" layoutY="-20.0" prefHeight="30.0" prefWidth="165.0" promptText="Quantidade de Produto..." />
+            <Text fill="#00194e" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantidade:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Group layoutX="358.0" layoutY="400.0">
+         <children>
+            <Text fill="#00194e" strokeType="OUTSIDE" strokeWidth="0.0" text="Preço de Custo:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtValor" layoutX="140.0" layoutY="-20.0" prefHeight="30.0" prefWidth="125.0" promptText="Valor (R$ )" />
+         </children>
+      </Group>
+      <Group layoutX="753.0" layoutY="278.0">
+         <children>
+            <TextField fx:id="txtMarcProd" layoutX="176.0" layoutY="-20.0" prefHeight="30.0" prefWidth="125.0" promptText="Insira Marca.." />
+            <Text fill="#00194e" strokeType="OUTSIDE" strokeWidth="0.0" text="Marca do Produto:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Group layoutX="753.0" layoutY="330.0">
+         <children>
+            <TextField fx:id="txtUdMedida" layoutX="181.0" layoutY="-11.0" prefHeight="30.0" prefWidth="125.0" promptText="Insira Valor.." />
+            <Text fill="#00194e" layoutY="8.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unidade de Medida:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="cbUnidades" layoutX="316.0" layoutY="-9.0" prefHeight="26.0" prefWidth="74.0" />
+         </children>
+      </Group>
+      <Group layoutX="355.0" layoutY="457.576171875">
+         <children>
+            <Text fill="#00194e" layoutX="4.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Observações:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="txtObs" layoutY="37.423828125" prefHeight="125.0" prefWidth="950.0" promptText="Insira as Observações..." />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>
